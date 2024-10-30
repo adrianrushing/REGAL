@@ -10,5 +10,5 @@ comb = sparse.block_diag([A,B])
 graph = Graph(adj = comb.tocsr())
 rep_method = RepMethod(max_layer = 2)
 representations = get_representations(graph, rep_method)
-print representations.shape
+print(representations.shape)
 
